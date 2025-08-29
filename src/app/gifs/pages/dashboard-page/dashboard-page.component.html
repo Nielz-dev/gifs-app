@@ -1,0 +1,23 @@
+<!-- component -->
+<link rel="preconnect" href="https://rsms.me/">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<style>
+    :root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+</style>
+<div class="bg-slate-100 w-screen h-screen antialiased text-slate-300 selection:bg-blue-600 selection:text-white overflow-hidden">
+  <div class="flex h-full">
+    <!-- Sidebar -->
+    <div class="w-[220px] h-full">
+      <gifs-side-menu />
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="flex-1 px-4 flex flex-col h-full pt-5 overflow-y-scroll">
+      <router-outlet />
+    </div>
+  </div>
+</div>
+
